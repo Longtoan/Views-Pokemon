@@ -5,7 +5,12 @@ const router = express.Router();
 const Post = require("../model/model");
 
 router.get("/", (req, res) => {
-  res.send("Welcome Posts");
+  Post.find((err, todos) => {
+    if (err) {
+      res.json(err);
+    }
+    res.json(todos);
+  });
 });
 
 router.post("/", async (req, res) => {
@@ -38,7 +43,7 @@ router.delete("/:id", async (req, res) => {
     res.json({ message: error });
   }
 });
-//update 
+//update
 router.patch("/:id", async (req, res) => {
   try {
     const update = await Post.updateOne(
