@@ -1,0 +1,76 @@
+doctype html
+
+head
+  title  Pokemon
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous')
+  script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js' integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' crossorigin='anonymous')
+  script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous')
+
+  link(rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css')
+  link(rel="stylesheet" href="./style/style.css")
+img.header(src="https://www.wickedcooltoys.com/wp-content/uploads/2017/06/Homepage-Banner-Pokemon-Web.jpg")
+
+.container
+  .row
+    .col-3
+      a.btn.btn-primary(href='/login' method="GET") Login
+      a.btn.btn-primary(href='/signup' method="post") Signup
+
+      #v-pills-tab.nav.flex-column.nav-pills(role='tablist' aria-orientation='vertical')
+        a#v-pills-home-tab.nav-link.active(data-toggle='pill' href='#v-pills-home' role='tab' aria-controls='v-pills-home' aria-selected='true') Thông Tin
+        a#v-pills-profile-tab.nav-link(data-toggle='pill' href='#v-pills-profile' role='tab' aria-controls='v-pills-profile' aria-selected='false') Series Phim
+        a#v-pills-messages-tab.nav-link(data-toggle='pill' href='#v-pills-messages' role='tab' aria-controls='v-pills-messages' aria-selected='false') Series Movies
+        a#v-pills-settings-tab.nav-link(data-toggle='pill' href='#v-pills-settings' role='tab' aria-controls='v-pills-settings' aria-selected='false') Nhân Vật
+    .col-9
+      #v-pills-tabContent.tab-content
+        #v-pills-home.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='v-pills-home-tab') 
+          .row
+            .col-3              
+              form(method='POST' action='/pokemon')
+                .form-group
+                  label Name:
+                  input.form-control(name='name' type='text')
+                .form-group
+                  label Description:
+                  input.form-control(name='description' type='text')
+                .form-group
+                  label Image:
+                  input.form-control(name='imgUrl' type='text')
+                button.btn.btn-primary(type='submit') save
+            each val in pokemon
+              .col-3
+                .card.pokemon
+                  img.card-img-top(src= val.imgUrl, alt='...' )
+                  .card-body
+                    p.card-title= val.name
+
+                    p.card-text= val.description
+                    button.btn.btn-primary(type='submit' method="DELETE" action='')  Delete
+        #v-pills-profile.tab-pane.fade(role='tabpanel' aria-labelledby='v-pills-profile-tab')
+          .row
+            each val in series
+              .col-4
+                .card.series
+                  img.card.series-img-top(src= val.imgUrl, alt='...')
+                  .card-body
+                    p.card-title= val.name
+                    p.card-text= val.description
+        #v-pills-messages.tab-pane.fade(role='tabpanel' aria-labelledby='v-pills-messages-tab')
+          .row
+            each val in movies
+              .col-4
+                .card.moviess
+                  img.card.series-img-top(src= val.imgUrl, alt='...')
+                  .card-body
+                    p.card-title= val.name
+                    p.card-text= val.description
+        #v-pills-settings.tab-pane.fade(role='tabpanel' aria-labelledby='v-pills-settings-tab')
+          .row
+            each val in persion
+              .col-4
+                .card.persion
+                  img.card.series-img-top(src= val.imgUrl, alt='...')
+                  .card-body
+                    p.card-title= val.name
+                    p.card-text= val.description

@@ -1,0 +1,42 @@
+body{
+    background-color: #ecf0f1;
+}
+img.header {
+    height: 30rem;
+    width: 100%;
+    padding: 10px 5px;
+}
+.container{
+    max-width: 1500px;
+}
+.card-body {
+    text-align: center;
+   
+}
+.card-title {
+    color:#2c3e50;
+    text-transform: uppercase;
+}
+.card.pokemon{
+    width: 270px;
+    height: 400px;
+    padding:10px;
+    margin:10px;
+    background-color: #ecf0f1;
+}
+img.card.series-img-top{
+    height: 350px;
+}
+.card-body {
+    max-height: 360px;
+    overflow: hidden;
+}
+input#inputEmail {
+    width: 20%;
+}
+input#inputPassword {
+    width: 20%;
+}
+input#inputName {
+    width: 20%;
+}

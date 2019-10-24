@@ -2,12 +2,16 @@
 // định nghĩa model
 const mongo = require("mongoose");
 
-const PostSchema = mongo.Schema({
-  title: {
+const Pokemon = mongo.Schema({
+  name: {
     type: String,
     require: true
   },
   description: {
+    type: String,
+    require: true
+  },
+  imgUrl:{
     type: String,
     require: true
   },
@@ -16,4 +20,6 @@ const PostSchema = mongo.Schema({
     default: Date.now
   }
 });
-module.exports = mongo.model("post", PostSchema);
+
+module.exports = mongo.model("pokemon", Pokemon);
+
