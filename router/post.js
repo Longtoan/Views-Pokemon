@@ -14,11 +14,20 @@ router.get("/", async (req, res) => {
   let movies = await Movies.find();
   res.render("index", { pokemon, series, persion, movies });
 });
+router.get("/data", async (req, res) => {
+  let pokemons = await Pokemon.find();
+  let series = await Series.find();
+  let persion = await Persion.find();
+  let movies = await Movies.find();
+  res.json({pokemons})
+});
 
 router.post("/pokemon", async (req, res) => {
   const pokemon = new Pokemon({
     name: req.body.name,
     description: req.body.description,
+    type: req.body.type,
+    weaknesses: req.body.weaknesses,
     imgUrl: req.body.imgUrl
   }); // xử lý data
   try {
@@ -76,34 +85,17 @@ router.post("/movies", async (req, res) => {
   }
 });
 router.get("/pokemon/:id", async (req, res) => {
+  
   try {
-    const get = await Pokemon.findById(req.params.id);
-    res.json(get);
+    let pokemondetail = await Pokemon.findById(req.params.id);
+    console.log(pokemondetail)
+    res.render("pokemondetail", {pokemondetail});
   } catch (error) {
     res.json({ message: error });
   }
 });
-// end delete
-router.delete("/pokemon/:id", async (req, res) => {
-  try {
-    const RemoveId = await Pokemon.remove({ _id: req.params.id });
-    res.json(RemoveId);
-  } catch (error) {
-    res.json({ message: error });
-  }
-});
-//update
-router.patch("/pokemon/:id", async (req, res) => {
-  try {
-    const update = await Pokemon.updateOne(
-      { _id: req.params.id },
-      { $set: { title: req.body.title } }
-    );
-    res.json(update);
-  } catch (error) {
-    res.json({ message: error });
-  }
-});
+
+
 //
 
 

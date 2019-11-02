@@ -1,0 +1,150 @@
+{
+    "_id": {
+        "$oid": "5da57d33a498112e84aa2a77"
+    },
+    "name": "Bulbasaur ",
+    "description": "Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.",
+    "type": "Grass, Poison",
+    "weaknesses": "Fire, Flying, Ice, Psychic",
+    "imgUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png",
+    "date": {
+        "$date": "2019-10-15T08:02:59.613Z"
+    },
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "5da57f34a2fcc21dccc9ced2"
+    },
+    "name": "Ivysaur ",
+    "description": "There is a bud on this Pokémon's back. To support its weight, Ivysaur's legs and trunk grow thick and strong. If it starts spending more time lying in the sunlight, it's a sign that the bud will bloom into a large flower soon.",
+    "type": "Grass, Poison",
+    "weaknesses": "Fire, Flying, Ice, Psychic",
+    "imgUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png",
+    "date": {
+        "$date": "2019-10-15T08:11:32.678Z"
+    },
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "5da5811694f98a3e7cf619e4"
+    },
+    "name": "Venusaur",
+    "description": "There is a large flower on Venusaur's back. The flower is said to take on vivid colors if it gets plenty of nutrition and sunlight. The flower's aroma soothes the emotions of people.",
+    "type": "Grass,Poison",
+    "weaknesses": "Fire, Flying, Ice, Psychic",
+    "imgUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png",
+    "date": {
+        "$date": "2019-10-15T08:19:34.695Z"
+    },
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "5da5816f6ecec03a9812616b"
+    },
+    "name": "Charmander",
+    "description": "The flame that burns at the tip of its tail is an indication of its emotions. The flame wavers when Charmander is enjoying itself. If the Pokémon becomes enraged, the flame burns fiercely.",
+    "type": "Fire",
+    "weaknesses": "Ground, Rock, Water",
+    "imgUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png",
+    "date": {
+        "$date": "2019-10-15T08:21:03.457Z"
+    },
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "5da5b75d78c7f52be0394bb9"
+    },
+    "name": "Chamrmeleon",
+    "description": "Charmeleon mercilessly destroys its foes using its sharp claws. If it encounters a strong foe, it turns aggressive. In this excited state, the flame at the tip of its tail flares with a bluish white color.",
+    "type": "Fire",
+    "weaknesses": "Ground, Rock, Water",
+    "imgUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png"
+}
+{
+    "_id": {
+        "$oid": "5da5b7f5d0cf073030884ff0"
+    },
+    "name": "Charizard",
+    "description": "Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself.",
+    "type": "Fire, Flying",
+    "weaknesses": "Rock, Electric, Water",
+    "imgUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png",
+    "date": {
+        "$date": "2019-10-15T12:13:41.625Z"
+    },
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "5da5b887d0cf073030884ff2"
+    },
+    "name": "Wartortle",
+    "description": "Squirtle's shell is not merely used for protection. The shell's rounded shape and the grooves on its surface help minimize resistance in water, enabling this Pokémon to swim at high speeds.",
+    "type": "Water",
+    "weaknesses": "Electric, Grass ",
+    "imgUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/008.png",
+    "date": {
+        "$date": "2019-10-15T12:16:07.691Z"
+    },
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "5dbdab13badff234301ba386"
+    },
+    "name": "Butterfree ",
+    "description": "Butterfree has a superior ability to search for delicious honey from flowers. It can even search out, extract, and carry honey from flowers that are blooming over six miles from its nest.",
+    "type": "Bug, Flying",
+    "weaknesses": "Rock, Electric, Fire, Flying",
+    "imgUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/012.png",
+    "date": {
+        "$date": "2019-11-02T16:13:07.617Z"
+    },
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "5dbdab43badff234301ba387"
+    },
+    "name": "Kakuna ",
+    "description": "Kakuna remains virtually immobile as it clings to a tree. However, on the inside, it is extremely busy as it prepares for its coming evolution. This is evident from how hot the shell becomes to the touch.",
+    "type": "Bug, Poison",
+    "weaknesses": "Fire, Flying, Psychic, Rock",
+    "imgUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/014.png",
+    "date": {
+        "$date": "2019-11-02T16:13:55.550Z"
+    },
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "5dbdab72badff234301ba388"
+    },
+    "name": "Rattata ",
+    "description": "Rattata is cautious in the extreme. Even while it is asleep, it constantly listens by moving its ears around. It is not picky about where it lives—it will make its nest anywhere.",
+    "type": "Normal",
+    "weaknesses": "Fighting",
+    "imgUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/019.png",
+    "date": {
+        "$date": "2019-11-02T16:14:42.240Z"
+    },
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "5dbdab9abadff234301ba389"
+    },
+    "name": "Ekans ",
+    "description": "Ekans curls itself up in a spiral while it rests. Assuming this position allows it to quickly respond to a threat from any direction with a glare from its upraised head.",
+    "type": "Poison",
+    "weaknesses": "Ground, Psychic",
+    "imgUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/023.png",
+    "date": {
+        "$date": "2019-11-02T16:15:22.089Z"
+    },
+    "__v": 0
+}

@@ -11,6 +11,16 @@ const Pokemon = mongo.Schema({
     type: String,
     require: true
   },
+  
+  type: {
+    type: String,
+    require: true
+  },
+  weaknesses: {
+    type: String,
+    require: true
+  },
+  
   imgUrl:{
     type: String,
     require: true

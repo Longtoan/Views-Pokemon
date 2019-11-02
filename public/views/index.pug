@@ -35,18 +35,27 @@ img.header(src="https://www.wickedcooltoys.com/wp-content/uploads/2017/06/Homepa
                   label Description:
                   input.form-control(name='description' type='text')
                 .form-group
+                  label Type:
+                  input.form-control(name='type' type='text')
+                .form-group
+                  label Weaknesses:
+                  input.form-control(name='weaknesses' type='text')
+                .form-group
                   label Image:
                   input.form-control(name='imgUrl' type='text')
                 button.btn.btn-primary(type='submit') save
             each val in pokemon
               .col-3
                 .card.pokemon
-                  img.card-img-top(src= val.imgUrl, alt='...' )
+                  p
+                    a(href=`/pokemon/${val._id}`)
+                      img.card-img-top(src= val.imgUrl, alt='...' )
                   .card-body
                     p.card-title= val.name
 
-                    p.card-text= val.description
-                    button.btn.btn-primary(type='submit' method="DELETE" action='')  Delete
+                    p.card-text= val.type 
+                   
+										  
         #v-pills-profile.tab-pane.fade(role='tabpanel' aria-labelledby='v-pills-profile-tab')
           .row
             each val in series
